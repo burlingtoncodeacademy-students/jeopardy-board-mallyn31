@@ -1,0 +1,47 @@
+h1 {
+    background-color: crimson;
+    border: 5px solid black;
+
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+  
+}
+
+h3 {
+    border: 3px dotted blue;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+    background-color: azure;
+}
+
+section {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    border: 5px solid black;
+  padding: 50px;
+    
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    display: block;
+    color: black;
+    background-color: rgb(235, 19, 19);
+    border: solid black 2px;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+footer {
+    text-align: center;
+}

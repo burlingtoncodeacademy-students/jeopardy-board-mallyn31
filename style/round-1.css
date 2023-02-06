@@ -1,0 +1,33 @@
+h1 {
+    background-color: rgb(89, 89, 238);
+    border: black;
+    border-style: solid black 3px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: blueviolet;
+}
+
+form {
+    text-align: center;
+}
+
+.button1 {
+    text-align: center;
+    
+}
+
+.button2 {
+    text-align: right;
+}
+
+p {
+    color: blue
+    
+}
+
+footer {
+    text-align: center;
+}
