@@ -1,0 +1,36 @@
+h1 {
+    background-color: rgb(89, 89, 238);
+    border: black;
+    border-style: solid black 3px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    color: black;
+    background-color: rgb(235, 19, 19);
+    border: solid black 2px;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer {
+    border-color: black;
+    text-align: center;
+    border-style: solid 2px;
+}

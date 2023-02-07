@@ -4,11 +4,465 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeopardy</title>
+    <title>Round Two</title>
     <script src="./scripts/index.js" type="module"></script>
+    <link rel="stylesheet" href="style/round-2.css">
   </head>
   <body>
-    <h1>Second Round</h1>
+    <h1>Round Two</h1>
+
+   <br>
+      <h2>Player Turn</h2>
+      <br>
+      <br>
+     
+     <style>
+.angry-grid {
+   display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   
+   gap: 10px;
+   height: 100%;
+   
+}
+  
+#item-0 {
+
+   background-color: #dee57d; 
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 2;
+   grid-column-end: 2;
+   text-align: center;
+}
+#item-1 {
+
+   background-color: #9aadf5; 
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 2;
+   grid-column-end: 3;
+   text-align: center;
+}
+#item-2 {
+
+   background-color: #7d6fda; 
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 2;
+   grid-column-end: 4;
+   text-align: center;
+}
+#item-3 {
+
+   background-color: #7d5bdb; 
+   grid-row-start: 1;
+   grid-column-start: 4;
+
+   grid-row-end: 2;
+   grid-column-end: 5;
+   text-align: center;
+}
+#item-4 {
+
+   background-color: #abdff5; 
+   grid-row-start: 1;
+   grid-column-start: 5;
+
+   grid-row-end: 2;
+   grid-column-end: 6;
+   text-align: center;
+}
+#item-5 {
+
+   background-color: #a55bc6; 
+   grid-row-start: 1;
+   grid-column-start: 6;
+
+   grid-row-end: 2;
+   grid-column-end: 7;
+   text-align: center;
+}
+#item-6 {
+
+   background-color: #c79d6f; 
+   grid-row-start: 2;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 2;
+   text-align: center;
+}
+#item-7 {
+
+   background-color: #73a58c; 
+   grid-row-start: 2;
+   grid-column-start: 2;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+   text-align: center;
+}
+#item-8 {
+
+   background-color: #e677da; 
+   grid-row-start: 2;
+   grid-column-start: 3;
+
+   grid-row-end: 3;
+   grid-column-end: 4;
+   text-align: center;
+}
+#item-9 {
+
+   background-color: #bfdd5b; 
+   grid-row-start: 2;
+   grid-column-start: 4;
+
+   grid-row-end: 3;
+   grid-column-end: 5;
+   text-align: center;
+}
+#item-10 {
+
+   background-color: #cfcd78; 
+   grid-row-start: 3;
+   grid-column-start: 1;
+
+   grid-row-end: 4;
+   grid-column-end: 2;
+   text-align: center;
+}
+#item-11 {
+
+   background-color: #dd9beb; 
+   grid-row-start: 4;
+   grid-column-start: 1;
+
+   grid-row-end: 5;
+   grid-column-end: 2;
+   text-align: center;
+}
+#item-12 {
+
+   background-color: #569fb8; 
+   grid-row-start: 5;
+   grid-column-start: 1;
+
+   grid-row-end: 6;
+   grid-column-end: 2;
+   text-align: center;
+}
+#item-13 {
+
+   background-color: #d99679; 
+   grid-row-start: 6;
+   grid-column-start: 1;
+
+   grid-row-end: 7;
+   grid-column-end: 2;
+   text-align: center;
+}
+#item-14 {
+
+   background-color: #7d9e79; 
+   grid-row-start: 2;
+   grid-column-start: 5;
+
+   grid-row-end: 3;
+   grid-column-end: 6;
+   text-align: center;
+}
+#item-15 {
+
+   background-color: #d5e975; 
+   grid-row-start: 2;
+   grid-column-start: 6;
+
+   grid-row-end: 3;
+   grid-column-end: 7;
+   text-align: center;
+}
+#item-16 {
+
+   background-color: #eb9ccd; 
+   grid-row-start: 3;
+   grid-column-start: 2;
+
+   grid-row-end: 4;
+   grid-column-end: 3;
+   text-align: center;
+}
+#item-17 {
+
+   background-color: #575b59; 
+   grid-row-start: 3;
+   grid-column-start: 3;
+
+   grid-row-end: 4;
+   grid-column-end: 4;
+   text-align: center;
+}
+#item-18 {
+
+   background-color: #d79a5f; 
+   grid-row-start: 3;
+   grid-column-start: 4;
+
+   grid-row-end: 4;
+   grid-column-end: 5;
+   text-align: center;
+}
+#item-19 {
+
+   background-color: #da8dd6; 
+   grid-row-start: 3;
+   grid-column-start: 5;
+
+   grid-row-end: 4;
+   grid-column-end: 6;
+   text-align: center;
+}
+#item-20 {
+
+   background-color: #7d75ba; 
+   grid-row-start: 3;
+   grid-column-start: 6;
+
+   grid-row-end: 4;
+   grid-column-end: 7;
+   text-align: center;
+}
+#item-21 {
+
+   background-color: #B65DD5; 
+   grid-row-start: 4;
+   grid-column-start: 2;
+
+   grid-row-end: 5;
+   grid-column-end: 3;
+   text-align: center;
+}
+#item-22 {
+
+   background-color: #759D95; 
+   grid-row-start: 4;
+   grid-column-start: 3;
+
+   grid-row-end: 5;
+   grid-column-end: 4;
+   text-align: center;
+}
+#item-23 {
+
+   background-color: #B9E777; 
+   grid-row-start: 4;
+   grid-column-start: 4;
+
+   grid-row-end: 5;
+   grid-column-end: 5;
+   text-align: center;
+}
+#item-24 {
+
+   background-color: #A59EAD; 
+   grid-row-start: 4;
+   grid-column-start: 5;
+
+   grid-row-end: 5;
+   grid-column-end: 6;
+   text-align: center;
+}
+#item-25 {
+
+   background-color: #855CD6; 
+   grid-row-start: 4;
+   grid-column-start: 6;
+
+   grid-row-end: 5;
+   grid-column-end: 7;
+   text-align: center;
+}
+#item-26 {
+
+   background-color: #55CBFF; 
+   grid-row-start: 5;
+   grid-column-start: 2;
+
+   grid-row-end: 6;
+   grid-column-end: 3;
+   text-align: center;
+}
+#item-27 {
+
+   background-color: #B6CEEE; 
+   grid-row-start: 5;
+   grid-column-start: 3;
+
+   grid-row-end: 6;
+   grid-column-end: 4;
+   text-align: center;
+}
+#item-28 {
+
+   background-color: #7BF985; 
+   grid-row-start: 5;
+   grid-column-start: 4;
+
+   grid-row-end: 6;
+   grid-column-end: 5;
+   text-align: center;
+}
+#item-29 {
+
+   background-color: #DB6EDC; 
+   grid-row-start: 5;
+   grid-column-start: 5;
+
+   grid-row-end: 6;
+   grid-column-end: 6;
+   text-align: center;
+}
+#item-30 {
+
+   background-color: #8F7D7B; 
+   grid-row-start: 5;
+   grid-column-start: 6;
+
+   grid-row-end: 6;
+   grid-column-end: 7;
+   text-align: center;
+}
+#item-31 {
+
+   background-color: #95ACC7; 
+   grid-row-start: 6;
+   grid-column-start: 2;
+
+   grid-row-end: 7;
+   grid-column-end: 3;
+   text-align: center;
+}
+#item-32 {
+
+   background-color: #998578; 
+   grid-row-start: 6;
+   grid-column-start: 3;
+
+   grid-row-end: 7;
+   grid-column-end: 4;
+   text-align: center;
+}
+#item-33 {
+
+   background-color: #B9EC77; 
+   grid-row-start: 6;
+   grid-column-start: 4;
+
+   grid-row-end: 7;
+   grid-column-end: 5;
+   text-align: center;
+}
+#item-34 {
+
+   background-color: #D9E9B6; 
+   grid-row-start: 6;
+   grid-column-start: 5;
+
+   grid-row-end: 7;
+   grid-column-end: 6;
+   text-align: center;
+}
+#item-35 {
+
+   background-color: #86B9BD; 
+   grid-row-start: 6;
+   grid-column-start: 6;
+
+   grid-row-end: 7;
+   grid-column-end: 7;
+   text-align: center;
+}
+</style>
+
+<div class="angry-grid">
+  <div id="item-0">CATEGORY1</div>
+  <div id="item-1">CATEGORY2</div>
+  <div id="item-2">CATEGORY3</div>
+  <div id="item-3">CATEGORY4</div>
+  <div id="item-4">CATEGORY5</div>
+  <div id="item-5">CATEGORY6</div>
+  <div id="item-6">200</div>
+  <div id="item-7">200</div>
+  <div id="item-8">200</div>
+  <div id="item-9">200</div>
+  <div id="item-10">400</div>
+  <div id="item-11">600</div>
+  <div id="item-12">800</div>
+  <div id="item-13">1000</div>
+  <div id="item-14">200</div>
+  <div id="item-15">200</div>
+  <div id="item-16">400</div>
+  <div id="item-17">400</div>
+  <div id="item-18">400</div>
+  <div id="item-19">400</div>
+  <div id="item-20">400</div>
+  <div id="item-21">600</div>
+  <div id="item-22">600</div>
+  <div id="item-23">600</div>
+  <div id="item-24">600</div>
+  <div id="item-25">600</div>
+  <div id="item-26">800</div>
+  <div id="item-27">800</div>
+  <div id="item-28">800</div>
+  <div id="item-29">800</div>
+  <div id="item-30">800</div>
+  <div id="item-31">1000</div>
+  <div id="item-32">1000</div>
+  <div id="item-33">1000</div>
+  <div id="item-34">1000</div>
+  <div id="item-35">1000</div>
+</div>
+<br>
+<br>
+<div>
+  <form>
+    <label for="user input">user input</label><br>
+    <input type="text">
+  </form>
+</div>
+<br>
+<div class="button1">
+  <button>
+    <a href="">GUESS</a>
+  
+  </button>
+  <button>
+    <a href="">PASS</a>
+  
+  </button>
+</div>
+<br>
+<br>
+<p>Player 1 Score: 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player 2 Score:0</p>
+<br>
+<br>
+</button>
+<div class="button2">
+<button>
+  <a href="/final-jeopardy.html">Final Jeopardy</a>
+</button>
+</div>
+<br>
+<footer>footer site information</footer>
+
+
+
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
   </body>
